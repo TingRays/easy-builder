@@ -1,14 +1,12 @@
 # 关于数据迁移的一些使用
-
- 首先，使用构建命令使用构建器
-
- ```shell
-$ php artisan builder:package {your-table-name-without-db-prefix}
-```
-
-会自动生成相关migration文件。
-
- 无需额外使用 `php artisan make:migration create_users_table` 命令。
+>
+> 首先，使用构建器命令，会自动生成相关migration文件。
+> 
+> ```shell
+> php artisan builder:package {your-table-name-without-db-prefix} //构建器命令
+> ```
+>
+> 无需额外使用 `php artisan make:migration create_users_table` 命令。
 
 
 ## 迁移的使用方法
